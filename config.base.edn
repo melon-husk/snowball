@@ -1,6 +1,6 @@
 ;; Override this with your own `config/config.edn`.
 
-{:discord {:token nil                              ;; Your Discord bot token.
+{:discord {:token "NjMzMTMyNzg3NjcwNzEyMzY0.XaPkgg.K9-SZo0WAiT-atfTIYaVCbTUeLw" ;; Your Discord bot token.
            :poll-ms 1000}                          ;; How long we should wait before asking Discord if we're connected again.
 
  :presence {:poll-ms 1000                          ;; How long we should wait before checking if we should join another channel.
@@ -11,12 +11,12 @@
  :comprehension {:phrase-debounce-ms 350           ;; How long can someone not speak for before we cut it as a phrase and try to comprehend it.
                  :stream-bytes-cutoff 1000000      ;; How many bytes can we hold for any given user before we cute it into a phrase.
                  :post-wake-timeout-ms 12000       ;; How long do we wait for a user to speak after they say the wake phrase.
-                 :language-code "en-GB"            ;; Language code to send to Google for comprehension. You could try en-US.
+                 :language-code "en-US"            ;; Language code to send to Google for comprehension. You could try en-US.
                  :sensitivity 0.5}                 ;; Sensitivity for Porcupine between 0 and 1, where 1 is most sensitive.
 
  :speech {:cache {:bucket nil}                     ;; A bucket that the speech synthesiser can use to store pre-rendered audio for reuse.
           :language-code "en_us"                   ;; Let Google know what accent we want, "en_gb" would also work.
-          :gender :male}                           ;; Use a :female or :male voice.
+          :gender :female}                           ;; Use a :female or :male voice.
 
- :command {:music {:channel nil                    ;; The channel ID that commands for the music bot should be sent to.
-                   :user nil}}}                    ;; The user to check for, if it's not in voice it'll be summoned.
+ :command {:music {:channel 622636764712009728     ;; The channel ID that commands for the music bot should be sent to.
+                   :user 607012733220814850}}}                    ;; The user to check for, if it's not in voice it'll be summoned.
